@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        sign_keystore {
+            keyAlias 'pixelme'
+            keyPassword 'Gathiya@100'
+            storeFile file('/home/sc/Sandip/development/pixelMe/keystore/pixelme_keystore.jks')
+            storePassword 'Gathiya@100'
+        }
+    }
+    compileSdkVersion 25
+    buildToolsVersion "26.0.2"
+    defaultConfig {
+        applicationId "in.laxmitech.pixelme"
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.sign_keystore
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.1.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:design:25.1.0'
+    compile 'com.google.android.gms:play-services-ads:11.0.4'
+    compile 'com.github.warkiz.widget:indicatorseekbar:1.2.3'
+    compile 'nl.dionsegijn:pixelate:1.1.0'
+    compile 'com.android.support:cardview-v7:26.0.0-alpha1'
+    testCompile 'junit:junit:4.12'
+}

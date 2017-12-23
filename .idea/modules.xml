@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/PixelMe.iml" filepath="$PROJECT_DIR$/PixelMe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/card-slider-0.1.0/card-slider-0.1.0.iml" filepath="$PROJECT_DIR$/card-slider-0.1.0/card-slider-0.1.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pixelate/pixelate.iml" filepath="$PROJECT_DIR$/pixelate/pixelate.iml" />
+    </modules>
+  </component>
+</project>
