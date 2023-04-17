@@ -1,0 +1,7 @@
+{
+  "status":"ok_gs",
+  "message":"this is test msg",
+  "data": {
+    "values": [1, 2,3]
+  }
+}
